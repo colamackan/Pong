@@ -46,11 +46,10 @@ public class MyPongModel implements PongModel{
 	public double getBallOutAngle(Point target, int barPos, int barHeight, int factor){	
 		if ((target.getY() + 10) < (barPos- (barHeight/2) + (barHeight/3))){
 			this.outAngle = (Math.PI*7/4)*factor + Math.PI;
-			
-		}
 		if ((target.getY() - 10) < (barPos + (barHeight/2) - (barHeight/3))){
 			this.outAngle = (Math.PI/4)*factor + Math.PI;
 					}
+		} 
 		else{
 			this.outAngle = Math.PI*factor;
 		}
