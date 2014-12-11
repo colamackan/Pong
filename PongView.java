@@ -7,13 +7,9 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Dimension;
 import java.awt.BorderLayout;
-
 import java.util.Collections;
 import java.util.Map;
 import java.util.HashMap;
-
-import model.PongModel;
-import model.BarKey;
 
 public class PongView {
     private final int WIDTH_PXL;

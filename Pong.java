@@ -1,9 +1,6 @@
 package pong;
 
 import java.awt.event.*;
-import PongView;
-import model.*;
-
 import java.util.Map;
 import java.util.HashSet;
 import java.util.HashMap;
@@ -26,7 +23,7 @@ class Pong {
 }
 
 class ControllerOptions {
-    private int framerate = 30;
+    private int framerate = 100;
     private String leftPlayer = "Left Player";
     private char leftPlayerUp = 'w';
     private char leftPlayerDown = 's';
@@ -165,7 +162,7 @@ class PongController implements KeyListener {
                 long last_compute = System.currentTimeMillis();
                 model.compute(input, delta);
                 view.update();
-
+                
                 delta = System.currentTimeMillis() - last_compute;
 
                 if (delta < target_delta) {
